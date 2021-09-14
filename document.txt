@@ -1,0 +1,41 @@
+// run
+
+php artisan serve
+
+1> php artisan make:controller dummyApi
+2> php artisan make:model Device
+
+// resorce if needed to auto create all needed functions
+php artisan make:controller MemberController --resource
+
+// Operation for one database table only one model and controller for same table name needed
+
+http://localhost:8000/api/updatedata/4
+
+{
+    "name": "Tablet Apple",
+    "member_id": 15
+}
+
+// api is the page
+
+
+https://stackoverflow.com/questions/17990820/set-port-for-php-artisan-php-serve
+export SERVER_PORT="8080"
+php artisan serve
+Or set SERVER_PORT=8080 in your .env file.
+
+
+ php artisan serve --port=8080
+And if you want to run it on port 80, you probably need to sudo:
+
+sudo php artisan serve --port=80
+
+// auth using sanctum
+https://laravel.com/docs/8.x/sanctum
+https://github.com/anil-sidhu/laravel-sanctum (Read it)
+
+// require(vendor/autoload.php): failed to open stream
+https://stackoverflow.com/questions/41209349/requirevendor-autoload-php-failed-to-open-stream
+
+composer install
