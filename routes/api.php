@@ -73,11 +73,10 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
     Route::get('users', [UserController::class, 'users']);
     Route::get('user/{id}', [UserController::class, 'singleUser']);
     Route::apiResource('member', MemberController::class);
+    Route::post('upload', [FileController::class, 'upload']);
 
 });
 
-
-Route::post('upload', [FileController::class, 'upload']);
 
 // API Authenticatin using Sanctum
 Route::post("login",[UserController::class,'login']);
