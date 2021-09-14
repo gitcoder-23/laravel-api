@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DeviceController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,6 +75,9 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
     Route::apiResource('member', MemberController::class);
 
 });
+
+
+Route::post('upload', [FileController::class, 'upload']);
 
 // API Authenticatin using Sanctum
 Route::post("login",[UserController::class,'login']);
