@@ -77,3 +77,4 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
 
 // API Authenticatin using Sanctum
 Route::post("login",[UserController::class,'login']);
+Route::post("register",[UserController::class,'register']);

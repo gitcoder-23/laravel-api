@@ -39,3 +39,13 @@ https://github.com/anil-sidhu/laravel-sanctum (Read it)
 https://stackoverflow.com/questions/41209349/requirevendor-autoload-php-failed-to-open-stream
 
 composer install
+
+
+// help
+https://youtu.be/k7aXBY0HPCE
+
+https://dev.to/tngeene/handling-user-registration-and-authentication-on-a-laravel-api-using-jwt-4751
+
+https://stackoverflow.com/questions/49945047/laravel-api-registration
+
+https://laravel.com/docs/5.8/api-authentication
